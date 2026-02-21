@@ -3,171 +3,168 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aarthi K | Resume Portfolio</title>
+  <title>Aarthi K - Portfolio</title>
 
   <style>
-    /* FORCE FULL TRANSPARENCY EVERYWHERE */
+    /* --- Global Styling --- */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      background: none !important;
+      font-family: "Poppins", sans-serif;
     }
 
-    html, body {
-      background: none !important;
-      background-color: transparent !important;
-      color: #000;
-      font-family: Arial, sans-serif;
+    body {
+      color: #ffffff;
+      background: #000;
       overflow-x: hidden;
     }
 
-    /* Background Animation */
-    #animated-bg {
+    /* --- Scrollable Background Animation Container --- */
+    #bg-frames {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      opacity: 0.10; /* watermark-like */
-      pointer-events: none;
       z-index: -1;
-      background-size: cover;
-      background-position: center;
-      animation: scrollFrames 12s steps(240) infinite;
+      overflow: hidden;
     }
 
-    /* Auto-generated via JS later */
-    @keyframes scrollFrames {}
+    #bg-frames img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 0.15s linear;
+    }
 
-    /* Text Container (transparent) */
-    .content {
+    /* --- Transparent Resume Content Container --- */
+    .content-wrapper {
       width: 85%;
       max-width: 900px;
-      margin: auto;
-      padding: 35px 15px;
-    }
-
-    h1 {
-      font-size: 2.2em;
-      margin-bottom: 10px;
+      margin: 40px auto;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.15); /* Transparency */
+      border-radius: 20px;
+      backdrop-filter: blur(4px);
+      color: #f1f1f1;
     }
 
     h2 {
-      font-size: 1.5em;
-      margin-top: 30px;
-      border-bottom: 2px solid rgba(0,0,0,0.4);
-      padding-bottom: 4px;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      font-weight: 600;
+      font-size: 26px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      padding-bottom: 5px;
     }
 
     p, li {
-      margin: 8px 0;
-      font-size: 1em;
+      margin: 6px 0;
+      line-height: 1.6;
     }
 
-    .badges span {
-      display: inline-block;
-      padding: 6px 12px;
-      margin: 4px;
-      border-radius: 6px;
-      border: 1px solid rgba(255,255,255,0.3);
-      backdrop-filter: blur(4px);
-      background: rgba(255,255,255,0.15) !important;
-      color: #000;
-    }
-
-    footer {
-      margin-top: 50px;
-      text-align: center;
-      font-size: 0.9em;
+    ul {
+      margin-left: 20px;
     }
   </style>
 </head>
 
 <body>
 
-  <div id="animated-bg"></div>
+  <!-- Background Animation Frames -->
+  <div id="bg-frames"></div>
 
-  <div class="content">
-    <h1>Aarthi K</h1>
-    <p>
-      Phone: 7604807489 |
-      Email: <a href="mailto:aarthirajaarthi58@gmail.com">aarthirajaarthi58@gmail.com</a><br>
-      Address: 50E/6B/1, P and T Colony, 3rd Street (East), 3rd Mile-Tuticorin
-    </p>
+  <!-- Resume Content -->
+  <div class="content-wrapper">
+
+    <h1 style="font-size: 40px; margin-bottom: 10px;">Aarthi K</h1>
+    <p><strong>Phone:</strong> 7604807489</p>
+    <p><strong>Email:</strong> aarthirajaarthi58@gmail.com</p>
+    <p><strong>Address:</strong> 50E/6B/1, P and T colony, 3rd Street (East), 3rd Mile – Tuticorin</p>
 
     <h2>Career Objective</h2>
-    <p>
-      Seeking a challenging opportunity where I can apply my skills, enhance my knowledge and contribute to the growth of the organization.
-    </p>
+    <p>Seeking a challenging opportunity where I can apply my skills, enhance my knowledge, and contribute to the growth of the organization.</p>
 
     <h2>Skills</h2>
-    <div class="badges">
-      <span>MPLab X IDE</span>
-      <span>PICSimLab</span>
-      <span>Embedded C (Beginner)</span>
-      <span>Basic proficiency in C</span>
-    </div>
+    <ul>
+      <li>MPLab X IDE</li>
+      <li>PICSimLab</li>
+      <li>Embedded C (Beginner)</li>
+      <li>Basic proficiency in C</li>
+    </ul>
 
-    <h2>Area of Interest</h2>
-    <div class="badges">
-      <span>Digital Electronics</span>
-      <span>Signals and Systems</span>
-    </div>
+    <h2>Areas of Interest</h2>
+    <ul>
+      <li>Digital Electronics</li>
+      <li>Signals and Systems</li>
+    </ul>
 
     <h2>Personality Traits</h2>
-    <div class="badges">
-      <span>Authentic</span>
-      <span>Inquisitive</span>
-      <span>Flexible</span>
-    </div>
+    <ul>
+      <li>Authentic</li>
+      <li>Inquisitive</li>
+      <li>Flexible</li>
+    </ul>
 
     <h2>Education</h2>
     <p><strong>B.E - Electronics and Communication Engineering</strong><br>
-    Government College of Engineering Tirunelveli (2023–2027)<br>
-    CGPA: 8.3 (upto IV sem)</p>
+       Government College of Engineering Tirunelveli (2023–2027)<br>
+       CGPA: 8.3 (up to IV semester)</p>
 
     <p><strong>HSC</strong><br>
-    Victoria Girl's Higher Secondary School, Tuticorin (2022–2023)<br>
-    Percentage: 90</p>
+       Victoria Girl's Higher Secondary School, Tuticorin (2022–2023)<br>
+       Percentage: 90%</p>
 
     <p><strong>SSLC</strong><br>
-    BMC Higher Secondary School, Tuticorin (2020–2021)<br>
-    Percentage: 76</p>
+       BMC Higher Secondary School, Tuticorin (2020–2021)<br>
+       Percentage: 76%</p>
 
     <h2>Project</h2>
     <p><strong>Automatic Railway Gate System using Arduino UNO</strong><br>
-    Designed to reduce accidents by automating the railway gate using sensors and Arduino.</p>
+       Designed to reduce accidents by automating the railway gate using sensors and Arduino.</p>
 
     <h2>Internship</h2>
-    <p>
-      Completed a 4-week internship via Emertxe — learned microwave oven system creation using MPLab X IDE, XC8 Compiler, and PICSimLab.
-    </p>
+    <p>Completed a 4-week internship via Emertxe.<br>
+       Gained knowledge in building a Microwave Oven system using MPLab X IDE, XC8 Compiler, and PICSimLab.</p>
 
     <h2>Achievements</h2>
-    <p>
-      Won 1st place in TechExpo at GCE Tirunelveli for the project 
-      “Automatic Railway Gate System” (₹750 prize).
-    </p>
+    <p>Secured 1st place in TechExpo conducted at GCE Tirunelveli for the team project  
+       <em>"Automatic Railway Gate System"</em> (₹750 cash prize).</p>
 
-    <footer>
-      © 2026 Aarthi K
-    </footer>
+    <h2>Workshops Attended</h2>
+    <p>Enrichment Activities</p>
+
   </div>
 
-  <!-- Auto-generate animation frames -->
+  <!-- JavaScript: Scroll Based Background Animation -->
   <script>
-    const style = document.createElement('style');
-    let framesCSS = '@keyframes scrollFrames {';
-    for (let i = 1; i <= 240; i++) {
-      const pct = ((i - 1) / 239 * 100).toFixed(2);
-      const img = i.toString().padStart(3, "0");
-      framesCSS += `${pct}% { background-image: url("frames/ezgif-frame-${img}.jpg"); }`;
-    }
-    framesCSS += '}';
-    style.innerHTML = framesCSS;
-    document.head.appendChild(style);
-  </script>
+    const totalFrames = 240; // Number of images
+    const bgContainer = document.getElementById("bg-frames");
 
+    // Load all frames
+    for (let i = 1; i <= totalFrames; i++) {
+      const img = document.createElement("img");
+      const frameNum = String(i).padStart(3, "0");
+      img.src = `frames/ezgif-frame-${frameNum}.jpg`;
+      bgContainer.appendChild(img);
+    }
+
+    const images = document.querySelectorAll("#bg-frames img");
+
+    window.addEventListener("scroll", () => {
+      const scrollPos = window.scrollY;
+      const docHeight = document.body.scrollHeight - window.innerHeight;
+      let frameIndex = Math.floor((scrollPos / docHeight) * (totalFrames - 1));
+
+      frameIndex = Math.max(0, Math.min(totalFrames - 1, frameIndex));
+
+      images.forEach((img, i) => {
+        img.style.opacity = i === frameIndex ? "1" : "0";
+      });
+    });
+  </script>
 </body>
 </html>
